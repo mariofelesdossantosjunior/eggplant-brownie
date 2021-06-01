@@ -49,6 +49,7 @@
 		30156BD42666969C0084D9F2 /* eggplant-brownieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eggplant-brownieUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30156BD82666969C0084D9F2 /* eggplant_brownieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eggplant_brownieUITests.swift; sourceTree = "<group>"; };
 		30156BDA2666969C0084D9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		308531402666FCF3004DB2E8 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +105,7 @@
 				30156BBA266696910084D9F2 /* ViewController.swift */,
 				30156BBC266696910084D9F2 /* Main.storyboard */,
 				30156BBF2666969B0084D9F2 /* Assets.xcassets */,
+				308531402666FCF3004DB2E8 /* MyPlayground.playground */,
 				30156BC12666969B0084D9F2 /* LaunchScreen.storyboard */,
 				30156BC42666969B0084D9F2 /* Info.plist */,
 			);

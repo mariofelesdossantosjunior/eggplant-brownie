@@ -1,4 +1,4 @@
-//
+				//
 //  ViewController.swift
 //  eggplant-brownie
 //
@@ -8,12 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+    @IBOutlet var nomeTextField: UITextField!
+    @IBOutlet var felicidadeTextField: UITextField!
+    
+    @IBAction func adiciona() { 
+        let nome = nomeTextField.text
+        let felicidade = felicidadeTextField.text
+        print("comi \(nome) e fique com felicidade \(felicidade)")
     }
-
-
 }
-
