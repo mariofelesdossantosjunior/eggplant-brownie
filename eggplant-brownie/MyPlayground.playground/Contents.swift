@@ -115,3 +115,11 @@ if let n = numero {
 }else {
     print("erro ao converter string para int")
 }
+
+
+class Pessoa {
+  var nome:String?
+}
+let pedro = Pessoa()
+print(pedro.nome)
+
