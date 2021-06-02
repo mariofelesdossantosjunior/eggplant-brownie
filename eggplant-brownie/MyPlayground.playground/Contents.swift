@@ -49,13 +49,69 @@ func todasCalorias(totalDeCalorias: Array<Double>) -> Double{
     for caloria in totalDeCalorias {
         total += caloria
     }
-    
+
     return total
 }
 
 let total = todasCalorias(totalDeCalorias: totalDeCalorias)
 print(total)
 
+var notas = [9, 6.5, 4, 8.25]
+var soma: Double = 0
+for nota in notas {
+  soma += nota
+}
+print(soma / Double(notas.count))
 
 
+/**
+ Criação das estruturas de classes
+ */
 
+class Refeicao {
+    var nome: String?
+    var felicidade: Int?
+}
+
+//Instanciando primeira classe
+let refeicao = Refeicao()
+//refeicao.nome = "Cafe"
+
+if refeicao.nome != nil {
+    print(refeicao.nome)
+}
+
+//Boas Praticas
+
+if let nome = refeicao.nome{
+    print(nome)
+}
+
+//Guard Let
+func exibeNomeDaRefeicao(){
+    if let nome = refeicao.nome{
+        print(nome)
+    }
+
+    guard let nome = refeicao.nome else {
+        //?????
+        return
+    }
+    
+    print(nome)
+}
+
+exibeNomeDaRefeicao()
+
+//Equivalente Elvis Operator Kotlin
+
+let mario: String? = nil
+print(mario ?? "haha")
+print(mario != nil ? mario : "BlaBla")
+
+let numero = Int("5")
+if let n = numero {
+    print(n)
+}else {
+    print("erro ao converter string para int")
+}
