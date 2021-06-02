@@ -123,3 +123,18 @@ class Pessoa {
 let pedro = Pessoa()
 print(pedro.nome)
 
+
+class RefeicaoTwo{
+    var nome: String
+    var felicidade: Int
+    
+    init(nome: String, felicidade: Int) {
+        self.nome = nome
+        self.felicidade = felicidade
+    }
+}
+
+let refeicaoTwo = RefeicaoTwo(nome: "Arroz", felicidade: 4)
+
+
+
