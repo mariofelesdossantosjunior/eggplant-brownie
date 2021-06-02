@@ -127,14 +127,55 @@ print(pedro.nome)
 class RefeicaoTwo{
     var nome: String
     var felicidade: Int
+    var itens: Array<Item> = []
     
     init(nome: String, felicidade: Int) {
         self.nome = nome
         self.felicidade = felicidade
     }
+    
+    func totalDeCalorias() -> Double{
+        var total = 0.0
+        for item in itens{
+            total += item.calorias
+        }
+        return total
+    }
+}
+
+class Item{
+    var nome: String
+    var calorias: Double
+    
+    init(nome: String, calorias: Double) {
+        self.nome =  nome
+        self.calorias = calorias
+    }
 }
 
 let refeicaoTwo = RefeicaoTwo(nome: "Arroz", felicidade: 4)
+
+let arroz = Item(nome: "Arroz", calorias: 10.0)
+let feijao = Item(nome: "Feijao", calorias: 20.0)
+let carne = Item(nome: "Carne", calorias: 34)
+
+refeicaoTwo.itens.append(arroz)
+refeicaoTwo.itens.append(feijao)
+refeicaoTwo.itens.append(carne)
+
+print(refeicaoTwo.nome)
+if let primeiroItem = refeicaoTwo.itens.first?.nome{
+    print(primeiroItem)
+}
+
+print(refeicaoTwo.totalDeCalorias())
+
+
+
+
+
+
+
 
 
 

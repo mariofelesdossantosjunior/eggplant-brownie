@@ -15,6 +15,8 @@
 		30156BC32666969B0084D9F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30156BC12666969B0084D9F2 /* LaunchScreen.storyboard */; };
 		30156BCE2666969C0084D9F2 /* eggplant_brownieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30156BCD2666969C0084D9F2 /* eggplant_brownieTests.swift */; };
 		30156BD92666969C0084D9F2 /* eggplant_brownieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30156BD82666969C0084D9F2 /* eggplant_brownieUITests.swift */; };
+		3085314226672554004DB2E8 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3085314126672554004DB2E8 /* Refeicao.swift */; };
+		308531442667258A004DB2E8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308531432667258A004DB2E8 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		30156BD82666969C0084D9F2 /* eggplant_brownieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eggplant_brownieUITests.swift; sourceTree = "<group>"; };
 		30156BDA2666969C0084D9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		308531402666FCF3004DB2E8 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3085314126672554004DB2E8 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
+		308531432667258A004DB2E8 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				30156BB6266696910084D9F2 /* AppDelegate.swift */,
 				30156BB8266696910084D9F2 /* SceneDelegate.swift */,
 				30156BBA266696910084D9F2 /* ViewController.swift */,
+				3085314126672554004DB2E8 /* Refeicao.swift */,
+				308531432667258A004DB2E8 /* Item.swift */,
 				30156BBC266696910084D9F2 /* Main.storyboard */,
 				30156BBF2666969B0084D9F2 /* Assets.xcassets */,
 				308531402666FCF3004DB2E8 /* MyPlayground.playground */,
@@ -260,9 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				308531442667258A004DB2E8 /* Item.swift in Sources */,
 				30156BBB266696910084D9F2 /* ViewController.swift in Sources */,
 				30156BB7266696910084D9F2 /* AppDelegate.swift in Sources */,
 				30156BB9266696910084D9F2 /* SceneDelegate.swift in Sources */,
+				3085314226672554004DB2E8 /* Refeicao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
