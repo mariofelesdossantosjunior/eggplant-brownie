@@ -9,10 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var tableViewController: RefeicoesTableViewController?
+    
     @IBOutlet var nomeTextField: UITextField?
     @IBOutlet var felicidadeTextField: UITextField?
     
-    @IBAction func adiciona() { 
+    @IBAction func adiciona() {
         
         guard let nomeRefeicao = nomeTextField?.text else {
             return
@@ -24,6 +26,8 @@ class ViewController: UIViewController {
         
         let refeicao = Refeicao(nome: nomeRefeicao, felicidade: felicidade)
         
+        tableViewController?.add(refeicao)
         navigationController?.popViewController(animated: true)
     }
+
 }
