@@ -106,7 +106,7 @@
                     <navigationItem key="navigationItem" id="oVd-fL-pC4">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="nXa-ro-Usn">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="Rx7-Ba-oTn"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="adicionar" id="Rx7-Ba-oTn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
