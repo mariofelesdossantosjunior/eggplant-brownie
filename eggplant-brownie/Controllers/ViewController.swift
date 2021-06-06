@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     // MARK: - UITableViewDelegate
-        
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let cell = tableView.cellForRow(at: indexPath) else { return }
         if(cell.accessoryType == .none){
@@ -50,12 +50,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             addItem(indexPath)
         }else {
             cell.accessoryType = .none
+            
+            removeItem(indexPath)
         }
     }
     
-    fileprivate func addItem(_ indexPath: IndexPath) {
-        let item = itens[indexPath.row]
+    private func addItem(_ index: IndexPath) {
+        let item = itens[index.row]
         itensSelecionados.append(item)
+    }
+
+    private func removeItem(_ indexPath: IndexPath) {
+        let item = itens[indexPath.row]
+        if let position = itensSelecionados.firstIndex(of: item){
+            itensSelecionados.remove(at: position)
+        }
     }
     
     // MARK: - IBAction
