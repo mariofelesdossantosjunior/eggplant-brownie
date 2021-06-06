@@ -13,12 +13,17 @@ class ViewController: UIViewController {
     @IBOutlet var felicidadeTextField: UITextField?
     
     @IBAction func adiciona() { 
-        if let nome = nomeTextField?.text, let felicidade = felicidadeTextField?.text{
-            if let felicidade = Int(felicidade){
-            let refeicao = Refeicao(nome: nome, felicidade: felicidade)
-            }else{
-                print("Erro ao gerar refeicao!")
-            }
+        
+        guard let nomeRefeicao = nomeTextField?.text else {
+            return
         }
+        
+        guard let felicidadeRefeicao = felicidadeTextField?.text, let felicidade = Int(felicidadeRefeicao) else {
+            return
+        }
+        
+        let refeicao = Refeicao(nome: nomeRefeicao, felicidade: felicidade)
+        
+        navigationController?.popViewController(animated: true)
     }
 }
