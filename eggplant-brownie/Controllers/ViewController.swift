@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @objc func adicionarItem(){
-        let viewController = AdiconarItensViewController()
+        let viewController = AdiconarItensViewController(delegate: self)
         navigationController?.pushViewController(viewController, animated: true)
     }
     
