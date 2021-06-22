@@ -14,6 +14,7 @@ protocol AdicionaRefeicaoDelegate {
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AdicionaItensDelegate {
     
     // MARK: - IBOutlet
+    
     @IBOutlet weak var itensTableView: UITableView!
     
     // MARK: - Atributos
@@ -35,7 +36,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // MARK: - View life cycle
     
     override func viewDidLoad() {
-        let botaoAdicionaItem = UIBarButtonItem(title: "Adiconar", style: .plain, target: self, action: #selector(self.adicionarItem))
+        let botaoAdicionaItem = UIBarButtonItem(title: "Adicionar", style: .plain, target: self, action: #selector(self.adicionarItem))
         navigationItem.rightBarButtonItem = botaoAdicionaItem
     }
     
