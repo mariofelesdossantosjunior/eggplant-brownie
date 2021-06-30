@@ -40,7 +40,12 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
             let cell = gesture.view as! UITableViewCell
             guard let indexPath = tableView.indexPath(for: cell) else { return }
             let refeicao = refeicoes[indexPath.row]
-            print(refeicao.nome)
+            
+            let action = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+            let alert = UIAlertController(title: refeicao.nome, message: refeicao.detalhes(), preferredStyle: .alert)
+            alert.addAction(action)
+            
+            present(alert, animated: true, completion: nil)
         }
     }
     

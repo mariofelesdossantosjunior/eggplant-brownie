@@ -25,4 +25,14 @@ class Refeicao: NSObject {
         }
         return total
     }
+    
+    func detalhes() -> String{
+        var message = "Felicidade \(felicidade )"
+        
+        for item in itens{
+            message += "\n \(item.nome )"
+        }
+        
+        return message
+    }
 }
